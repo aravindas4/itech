@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	/*text-align: left;*/
+}
+.twocol {
+	display: inline-block;
+	width: 50%;
+	background-color: yellow;
+}
+.threecol {
+	display: inline-block;
+	width: 33.33%;
+	background-color: red;
+}
+.fourcol {
+	display: inline-block;
+	width: 25%;
+	background-color: green;
+}
+
+.sixcol {
+	display: inline-block;
+	width: 33.33%;
+	/*background-color: lightblue;*/
+}
+
+.banner {
+	background-image: url("banner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.banner_wrapper {
+	max-width: 900px;
+	color: white;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+	.onecol, .twocol, .threecol,.fourcol, .sixcol {
+		display: block;
+		width: auto;
+	}
+}
